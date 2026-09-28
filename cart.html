@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | BYD Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">BYD</span>
+
+            <span>
+                <strong>BYD Vault</strong>
+                <small>ACCESSORIES</small>
+            </span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html" class="active">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+<section class="page-hero small-page-hero">
+    <div class="container">
+
+        <p class="eyebrow">YOUR SHOPPING BAG</p>
+
+        <h1>Your Cart</h1>
+
+    </div>
+</section>
+
+
+<section class="cart-section">
+    <div class="container">
+
+        <div id="cartContainer"></div>
+
+
+        <div class="checkout-area" id="checkoutArea">
+
+            <div class="checkout-title">
+                <p class="eyebrow">CHECKOUT</p>
+                <h2>Complete Your Order</h2>
+            </div>
+
+
+            <form id="checkoutForm" class="checkout-form">
+
+                <div class="form-section">
+
+                    <h3>Customer Information</h3>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" required>
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Contact Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="address">Complete Address</label>
+                        <textarea id="address" rows="4" required></textarea>
+                    </div>
+
+                </div>
+
+
+                <div class="form-section">
+
+                    <h3>Payment Method</h3>
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+                            <input type="radio"
+                                   name="payment"
+                                   value="Cash on Delivery"
+                                   checked>
+
+                            <span>
+                                <strong>Cash on Delivery</strong>
+                                <small>Pay when your order arrives.</small>
+                            </span>
+                        </label>
+
+
+                        <label class="payment-option">
+                            <input type="radio"
+                                   name="payment"
+                                   value="GCash">
+
+                            <span>
+                                <strong>GCash</strong>
+                                <small>Pay using your GCash account.</small>
+                            </span>
+                        </label>
+
+
+                        <label class="payment-option">
+                            <input type="radio"
+                                   name="payment"
+                                   value="Bank Transfer">
+
+                            <span>
+                                <strong>Bank Transfer</strong>
+                                <small>Pay through bank transfer.</small>
+                            </span>
+                        </label>
+
+                    </div>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-dark checkout-btn">
+                    Place Order
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <div class="receipt-area" id="receiptArea"></div>
+
+    </div>
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="footer-logo">BYD Vault</a>
+            <p>Affordable accessories made for everyday style.</p>
+        </div>
+
+        <div>
+            <h4>QUICK LINKS</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <div>
+            <h4>CONTACT</h4>
+            <p>brenandelacruz25@gmail.com</p>
+            <p>09630110638</p>
+            <p>Binuangan, Obando, Bulacan</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2026 BYD Vault. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

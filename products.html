@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | BYD Vault</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <span class="logo-mark">BYD</span>
+
+            <span>
+                <strong>BYD Vault</strong>
+                <small>ACCESSORIES</small>
+            </span>
+        </a>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="cart.html">
+                Cart <span class="cart-count">0</span>
+            </a>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<section class="page-hero product-page-hero">
+
+    <div class="container">
+
+        <p class="eyebrow">THE COLLECTION</p>
+
+        <h1>Our Products</h1>
+
+        <p>
+            Explore our collection of watches, necklaces,
+            rings, bracelets, and caps.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="products-section">
+
+    <div class="container">
+
+        <div class="product-tools">
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search products..."
+                >
+            </div>
+
+            <select id="sortSelect">
+                <option value="default">Sort By</option>
+                <option value="low">Price: Low to High</option>
+                <option value="high">Price: High to Low</option>
+                <option value="name">Name: A to Z</option>
+            </select>
+
+        </div>
+
+
+        <div class="category-nav">
+
+            <button class="category-btn active" data-category="all">
+                All
+            </button>
+
+            <button class="category-btn" data-category="watches">
+                Watches
+            </button>
+
+            <button class="category-btn" data-category="necklaces">
+                Necklaces
+            </button>
+
+            <button class="category-btn" data-category="rings">
+                Rings
+            </button>
+
+            <button class="category-btn" data-category="bracelets">
+                Bracelets
+            </button>
+
+            <button class="category-btn" data-category="caps">
+                Caps
+            </button>
+
+        </div>
+
+
+        <div class="product-grid" id="productGrid">
+
+
+            <div class="product-card"
+                 data-category="watches"
+                 data-name="Classic Black Watch"
+                 data-price="499">
+
+                <div class="product-image">
+                    <img src="images/classic.webp"
+                         alt="Classic Black Watch">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">WATCHES</span>
+                    <h3>Classic Black Watch</h3>
+                    <p>₱499</p>
+                    <button class="add-btn" onclick="addToCart(1)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="watches"
+                 data-name="Silver Minimalist Watch"
+                 data-price="599">
+
+                <div class="product-image">
+                    <img src="images/silver.webp"
+                         alt="Silver Minimalist Watch">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">WATCHES</span>
+                    <h3>Silver Minimalist Watch</h3>
+                    <p>₱599</p>
+                    <button class="add-btn" onclick="addToCart(2)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="watches"
+                 data-name="Casual Leather Watch"
+                 data-price="699">
+
+                <div class="product-image">
+                    <img src="images/casual.jpg"
+                         alt="Casual Leather Watch">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">WATCHES</span>
+                    <h3>Casual Leather Watch</h3>
+                    <p>₱699</p>
+                    <button class="add-btn" onclick="addToCart(3)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="necklaces"
+                 data-name="Simple Chain Necklace"
+                 data-price="199">
+
+                <div class="product-image">
+                    <img src="images/simple.webp"
+                         alt="Simple Chain Necklace">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">NECKLACES</span>
+                    <h3>Simple Chain Necklace</h3>
+                    <p>₱199</p>
+                    <button class="add-btn" onclick="addToCart(4)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="necklaces"
+                 data-name="Pendant Necklace"
+                 data-price="249">
+
+                <div class="product-image">
+                    <img src="images/pendant.avif"
+                         alt="Pendant Necklace">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">NECKLACES</span>
+                    <h3>Pendant Necklace</h3>
+                    <p>₱249</p>
+                    <button class="add-btn" onclick="addToCart(5)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="necklaces"
+                 data-name="Stainless Steel Necklace"
+                 data-price="299">
+
+                <div class="product-image">
+                    <img src="images/steel.jpg"
+                         alt="Stainless Steel Necklace">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">NECKLACES</span>
+                    <h3>Stainless Steel Necklace</h3>
+                    <p>₱299</p>
+                    <button class="add-btn" onclick="addToCart(6)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="rings"
+                 data-name="Simple Silver Ring"
+                 data-price="149">
+
+                <div class="product-image">
+                    <img src="images/silverR.avif"
+                         alt="Simple Silver Ring">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">RINGS</span>
+                    <h3>Simple Silver Ring</h3>
+                    <p>₱149</p>
+                    <button class="add-btn" onclick="addToCart(7)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="rings"
+                 data-name="Black Band Ring"
+                 data-price="179">
+
+                <div class="product-image">
+                    <img src="images/blackR.jpg"
+                         alt="Black Band Ring">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">RINGS</span>
+                    <h3>Black Band Ring</h3>
+                    <p>₱179</p>
+                    <button class="add-btn" onclick="addToCart(8)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="rings"
+                 data-name="Stainless Steel Ring"
+                 data-price="229">
+
+                <div class="product-image">
+                    <img src="images/steelR.webp"
+                         alt="Stainless Steel Ring">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">RINGS</span>
+                    <h3>Stainless Steel Ring</h3>
+                    <p>₱229</p>
+                    <button class="add-btn" onclick="addToCart(9)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="bracelets"
+                 data-name="Beaded Bracelet"
+                 data-price="129">
+
+                <div class="product-image">
+                    <img src="images/beaded.webp"
+                         alt="Beaded Bracelet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">BRACELETS</span>
+                    <h3>Beaded Bracelet</h3>
+                    <p>₱129</p>
+                    <button class="add-btn" onclick="addToCart(10)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="bracelets"
+                 data-name="Chain Bracelet"
+                 data-price="199">
+
+                <div class="product-image">
+                    <img src="images/chainB.jpg"
+                         alt="Chain Bracelet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">BRACELETS</span>
+                    <h3>Chain Bracelet</h3>
+                    <p>₱199</p>
+                    <button class="add-btn" onclick="addToCart(11)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="bracelets"
+                 data-name="Stainless Steel Bracelet"
+                 data-price="249">
+
+                <div class="product-image">
+                    <img src="images/steelB.webp"
+                         alt="Stainless Steel Bracelet">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">BRACELETS</span>
+                    <h3>Stainless Steel Bracelet</h3>
+                    <p>₱249</p>
+                    <button class="add-btn" onclick="addToCart(12)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="caps"
+                 data-name="Classic Black Cap"
+                 data-price="199">
+
+                <div class="product-image">
+                    <img src="images/blackC.webp"
+                         alt="Classic Black Cap">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">CAPS</span>
+                    <h3>Classic Black Cap</h3>
+                    <p>₱199</p>
+                    <button class="add-btn" onclick="addToCart(13)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="caps"
+                 data-name="Minimalist Baseball Cap"
+                 data-price="249">
+
+                <div class="product-image">
+                    <img src="images/baseballC.webp"
+                         alt="Minimalist Baseball Cap">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">CAPS</span>
+                    <h3>Minimalist Baseball Cap</h3>
+                    <p>₱249</p>
+                    <button class="add-btn" onclick="addToCart(14)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card"
+                 data-category="caps"
+                 data-name="Embroidered Logo Cap"
+                 data-price="299">
+
+                <div class="product-image">
+                    <img src="images/logoC.jpg"
+                         alt="Embroidered Logo Cap">
+                </div>
+
+                <div class="product-info">
+                    <span class="product-category">CAPS</span>
+                    <h3>Embroidered Logo Cap</h3>
+                    <p>₱299</p>
+                    <button class="add-btn" onclick="addToCart(15)">
+                        Add to Cart
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <p class="no-results" id="noResults">
+            No products found.
+        </p>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+            <a href="index.html" class="footer-logo">BYD Vault</a>
+            <p>Affordable accessories made for everyday style.</p>
+        </div>
+
+        <div>
+            <h4>QUICK LINKS</h4>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+        </div>
+
+        <div>
+            <h4>CONTACT</h4>
+            <p>brenandelacruz25@gmail.com</p>
+            <p>09630110638</p>
+            <p>Binuangan, Obando, Bulacan</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <p>© 2026 BYD Vault. All Rights Reserved.</p>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
